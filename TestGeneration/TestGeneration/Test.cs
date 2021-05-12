@@ -902,10 +902,14 @@ namespace TestGeneration
             int value = rightBorder * rightBorder;
 
             int numerator = 2 * rightBorder;
-            int denominator = 9;
+            int denominator = 3;
             ReduceFraction(ref numerator, ref denominator);
 
-            string trueAnswer = $"{numerator}/{denominator}";
+            string trueAnswer;
+            if (denominator == 1)
+                trueAnswer = numerator.ToString();
+            else
+                trueAnswer = $"{numerator}/{denominator}";
 
             int wrN = 2 * rightBorder;
             int wrD = value;
