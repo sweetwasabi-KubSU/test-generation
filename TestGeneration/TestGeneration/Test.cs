@@ -197,8 +197,8 @@ namespace TestGeneration
         {
             Random random = new Random();
 
-            int meat = random.Next(6, 10);
-            int cabbage = random.Next(4, 10);
+            int meat = random.Next(6, 9);
+            int cabbage = random.Next(4, 8);
             int numberOfPies = meat + cabbage;
 
             int willBe = random.Next(2, 4);
